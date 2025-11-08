@@ -1,0 +1,284 @@
+/* ================================================== */
+/* 1. TIPOGRAFIA E GLOBAIS
+/* ================================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7FFF6; 
+    color: #493843;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6,
+.fw-bolder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #493843;
+}
+
+.navbar-brand span,
+.navbar-brand .navbar-text-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+a {
+    color: #4C956C;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2C6E49;
+}
+
+a.link-dark, a.link-dark:hover {
+    color: #493843;
+}
+
+/* ================================================== */
+/* 2. OVERRIDES DE COMPONENTES BOOTSTRAP*/
+
+.bg-dark {
+    background-color: #2C6E49 !important;
+}
+
+.bg-primary {
+    background-color: #2C6E49 !important;
+}
+
+/* Fundo secundário (cor customizada) */
+.bg-light {
+    background-color: #DAE6DA !important; 
+}
+
+.btn-primary {
+    background-color: #2C6E49;
+    border-color: #2C6E49;
+}
+
+.btn-primary:hover {
+    background-color: #235839; 
+    border-color: #235839;
+}
+
+.btn-outline-light:hover {
+    color: #2C6E49; 
+}
+
+.lead.text-muted,
+.bg-light .text-muted {
+    color: #493843 !important;
+    opacity: 0.75;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.85);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFFFFF;
+}
+
+.navbar-dark .navbar-brand {
+    color: #FFFFFF;
+}
+
+/* ================================================== */
+/* 3. LAYOUT: NAVBAR & LOGOS*/
+
+.navbar-logo {
+    height: 30px;
+    width: auto;
+}
+
+.navbar-brand .navbar-text-brand {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+    margin-left: 0.5rem;
+}
+
+.masthead-logo {
+    height: 100px;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    .masthead-logo {
+        height: 80px;
+    }
+}
+
+/* ================================================== */
+/* 4. LAYOUT: MASTHEAD (HERO)*/
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: white;
+}
+
+.masthead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.masthead .header-carousel-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.masthead .header-carousel-bg .carousel-inner {
+    height: 100%;
+}
+
+.masthead .header-carousel-bg .carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.masthead .header-carousel-bg .carousel-item img.header-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.masthead .header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.masthead h1 {
+    color: white !important;
+    text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.7);
+}
+
+.masthead p.lead {
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 0.0625rem 0.0625rem rgba(0, 0, 0, 0.7);
+}
+
+.masthead .btn-outline-light {
+    color: white;
+    border-color: white;
+}
+
+.masthead .btn-outline-light:hover {
+    color: #2C6E49;
+    background-color: white;
+    border-color: white;
+}
+
+.masthead .carousel-indicators button {
+    background-color: white;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.masthead .carousel-indicators button.active {
+    opacity: 1;
+}
+
+.masthead .carousel-control-prev-icon,
+.masthead .carousel-control-next-icon {
+    filter: invert(1);
+    z-index: 2;
+}
+
+/* ================================================== */
+/* 5. ANIMAÇÕES: HOVER (FEATURES, PARCEIROS, CARDS)*/
+
+.feature {
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.1);
+}
+
+.py-5.bg-light .col-lg-3.col-md-4.col-6.text-center.mb-5 img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.py-5.bg-light .col-lg-3.col-md-4.col-6.text-center.mb-5 img:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ================================================== */
+/* 6. ANIMAÇÃO: SPLASH SCREEN*/
+
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #2C6E49;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeOutSplash 0.8s ease-out 2.2s forwards;
+}
+
+.splash-logo {
+    max-width: 150px;
+    animation: fadeInLogo 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeInLogo {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOutSplash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
