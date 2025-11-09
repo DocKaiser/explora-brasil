@@ -10,17 +10,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6,
-.fw-bolder {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #493843;
-}
-
+.fw-bolder,
 .navbar-brand span,
 .navbar-brand .navbar-text-brand {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    color: #493843;
 }
 
 a {
@@ -37,7 +32,8 @@ a.link-dark, a.link-dark:hover {
 }
 
 /* ================================================== */
-/* 2. OVERRIDES DE COMPONENTES BOOTSTRAP*/
+/* 2. OVERRIDES DE COMPONENTES BOOTSTRAP
+/* ================================================== */
 
 .bg-dark {
     background-color: #2C6E49 !important;
@@ -47,7 +43,6 @@ a.link-dark, a.link-dark:hover {
     background-color: #2C6E49 !important;
 }
 
-/* Fundo secundário (cor customizada) */
 .bg-light {
     background-color: #DAE6DA !important; 
 }
@@ -85,7 +80,8 @@ a.link-dark, a.link-dark:hover {
 }
 
 /* ================================================== */
-/* 3. LAYOUT: NAVBAR & LOGOS*/
+/* 3. LAYOUT: NAVBAR & LOGOS
+/* ================================================== */
 
 .navbar-logo {
     height: 30px;
@@ -111,7 +107,8 @@ a.link-dark, a.link-dark:hover {
 }
 
 /* ================================================== */
-/* 4. LAYOUT: MASTHEAD (HERO)*/
+/* 4. LAYOUT: MASTHEAD (HERO)
+/* ================================================== */
 
 .masthead {
     position: relative;
@@ -205,7 +202,8 @@ a.link-dark, a.link-dark:hover {
 }
 
 /* ================================================== */
-/* 5. ANIMAÇÕES: HOVER (FEATURES, PARCEIROS, CARDS)*/
+/* 5. ANIMAÇÕES: HOVER (FEATURES, PARCEIROS, CARDS)
+/* ================================================== */
 
 .feature {
     transition: transform 0.3s ease-in-out;
@@ -241,7 +239,8 @@ a.link-dark, a.link-dark:hover {
 }
 
 /* ================================================== */
-/* 6. ANIMAÇÃO: SPLASH SCREEN*/
+/* 6. ANIMAÇÃO: SPLASH SCREEN
+/* ================================================== */
 
 #splash-screen {
     position: fixed;
