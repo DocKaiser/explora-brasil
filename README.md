@@ -1,101 +1,52 @@
-# Protótipo de Plataforma de Imersão (Equipe HIDROTECH)
+# Explora Tocantins - Immersive Tourism Platform 🌍✨
+**Award-winning Project: 4th Place @ IV IDEATHON MAKER - 16ª JICE (2025)**
 
-Este repositório contém o protótipo funcional de uma plataforma digital interativa, desenvolvido pela equipe HIDROTECH como solução para o Ideathon IFTO.
+[![English](https://img.shields.io/badge/lang-en-red.svg)](#-about-the-project)
+[![Português](https://img.shields.io/badge/lang-pt--br-green.svg)](#-sobre-o-projeto)
 
-# 1. Visão Geral
+---
 
-A plataforma busca promover a educação e o turismo sustentável, integrando ciência, tecnologia e cultura. O projeto apresenta pontos turísticos regionais por meio de uma experiência imersiva (focada em VR Cardboard/mobile), destacando o contexto cultural e socioeconômico de cada região.
+## 🇺🇸 About the Project
+**Explora Tocantins** is a high-fidelity functional prototype designed to promote sustainable tourism and environmental education through immersive technology. Developed by **Team HIDROTECH**, the project was recognized with **4th Place at the IV Ideathon Maker** during the **16th JICE (Jornada de Iniciação Científica e Extensão - IFTO)**.
 
-O módulo inicial implementado como prova de conceito é a "Expedição Tocantins".
+The platform integrates science, technology, and culture, offering a Mobile/VR-ready experience that highlights the socio-economic and cultural context of regional landmarks.
 
-# 2. Status do Projeto
+### 🛠 Technical Specifications & Stack
+* **Architecture:** Modular file structure designed for scalability and maintainability.
+* **Frontend Core:** HTML5 & CSS3 (Advanced animations and transitions).
+* **UI/UX Framework:** Bootstrap 5 (Responsive Grid, Modals for VR-Video integration, and Custom Components).
+* **Scripting:** JavaScript (ES6+) managing splash screen logic and asynchronous component interaction.
+* **Assets Optimization:** Optimized media delivery for mobile performance (100vh Masthead, object-fit layouts).
 
-# Protótipo Funcional (Desenvolvido para o Ideathon).
+### 🌟 Key Engineering Features
+* **Immersive VR-Lite Module:** Seamless integration with 360° content via dynamic modals.
+* **Micro-interactions Engine:** Custom CSS engine for UI feedback (transform-scale and hover-floating effects).
+* **Performance-First Design:** Clean directory structure separating assets, global styles, and local thematic overrides.
 
-# 3. Tecnologias Utilizadas
+---
 
-HTML5: Estruturação semântica do conteúdo.
+## 🇧🇷 Sobre o Projeto
+O **Explora Tocantins** é um protótipo funcional de alta fidelidade desenvolvido para promover o turismo sustentável e a educação ambiental. O projeto foi premiado com o **4º Lugar no IV Ideathon Maker** durante a **16ª JICE (2025)** pelo IFTO.
 
-CSS3: Estilizações personalizadas, animações e responsividade.
+A plataforma busca democratizar o acesso a pontos turísticos regionais através de uma experiência imersiva (focada em VR Cardboard/Mobile), integrando dados científicos e culturais de forma interativa.
 
-Bootstrap 5: Framework principal para layout, componentes (Navbar, Cards, Carousel, Modals) e responsividade.
+### 🛠 Destaques Técnicos
+* **Bootstrap 5:** Implementação de layout responsivo e componentes modulares.
+* **UX/UI Customizado:** Paleta de cores estratégica e tipografia Poppins para alta legibilidade.
+* **Interatividade JS:** Controle de fluxo de execução de scripts de animação e modais de vídeo.
+* **Estrutura Modular:** Separação lógica de diretórios para facilitar a manutenção e escalabilidade do software.
 
-JavaScript (ES6+): Utilizado para a animação de splash screen e scripts de componentes.
+---
 
-# 4. Estrutura de Arquivos
+## 🏆 Awards & Recognition
+* **4th Place Overall** - IV Ideathon Maker (Espaço de Inovação).
+* **Honorable Mention** - 16ª JICE (Jornada de Iniciação Científica e Extensão - IFTO).
 
-/ (Raiz do Projeto)
-│
-├── index.html              (Página inicial / Masthead)
-│
-├── Tocantis/
-│   ├── EXPEDICAO-TOCANTINS.html (Página de detalhes da expedição)
-│   ├── css/
-│   │   ├── styles.css         (CSS do template de blog)
-│   │   └── custom.css         (Estilos temáticos da expedição)
-│   └── js/
-│       └── video-controls.js  (Script de controle dos modais)
-│
-├── css/
-│   ├── styles.css            (CSS principal do template)
-│   └── custom.css            (Estilos globais: paleta, fontes, animações)
-│
-├── js/
-│   └── scripts.js            (Script do splash screen principal)
-│
-└── assets/
-    ├── imgs/
-    │   ├── LOGOEXPLORA.png
-    │   ├── IFTO.png
-    │   └── ... (imagens)
-    │
-    └── favicon2.ico
+## 👨‍💻 Author
+**Gabriel Maia Sousa**
+* Computer Networks Technician (IFTO).
+* Systems Analysis and Development Student (IFTO Araguaína).
+* *Seeking opportunities in Software Engineering & Backend Development.*
 
-
-# 5. Funcionalidades Implementadas
-
-Animação de Splash Screen: Animação de fade in do logo executada na abertura do site.
-
-Identidade Visual Personalizada:
-
-Definição de uma paleta de cores global (Verde, Mint Cream, Eggplant).
-
-Implementação da fonte "Poppins" (via Google Fonts) para consistência tipográfica.
-
-Aplicação de logo (LOGOEXPLORA.png) na navbar e no cabeçalho.
-
-Cabeçalho (Masthead) Interativo:
-
-Uso de um Carrossel Bootstrap como fundo de tela cheia (100vh).
-
-Aplicação de um overlay (camada escura) para garantir a legibilidade do texto.
-
-Imagens com object-fit: cover para evitar distorção de proporção.
-
-Estrutura Modular (Página de Expedição):
-
-A página principal (index.html) linka para a página de expedição.
-
-A página EXPEDICAO-TOCANTINS.html utiliza um layout de blog (com barra lateral) para exibir as rotas e parceiros.
-
-Utilização de Modais Bootstrap para exibir os vídeos de imersão (via <iframe> do YouTube) e o contexto de cada rota.
-
-Estilização Específica:
-
-A página da expedição carrega um custom.css secundário (local) para aplicar estilos temáticos (cores da bandeira do Tocantins) sem afetar o site principal.
-
-Micro-interações (CSS):
-
-Efeito de "zoom" (transform: scale(1.1)) ao passar o mouse sobre os ícones de features e logos de parceiros.
-
-Efeito de "flutuação" (transform: translateY(-5px)) ao passar o mouse sobre os cards.
-
-# 6. Como Executar Localmente
-
-Clone este repositório ou baixe o arquivo ZIP.
-
-Descompacte a pasta (se necessário).
-
-Abra o arquivo index.html em qualquer navegador web moderno.
-
-Nota: Se as fontes ou estilos não carregarem corretamente, limpe o cache do navegador (Ctrl + Shift + R ou Cmd + Shift + R).
+---
+*Developed as a Proof of Concept (PoC) for the IFTO Innovation Hub.*
